@@ -1,0 +1,224 @@
+/***** Universal *****/
+
+/***** Document *****/
+
+/***** Meta Deta *****/
+
+/***** Sectioning and Structuring *****/
+body {
+  font-family: "Montserrat";
+
+  text-align: center;
+}
+
+/***** Headings *****/
+/* 
+  You need to "customize" font weight in Google Fonts and use it here to make 
+  it display correctly. 
+*/
+h1 {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/***** Lists *****/
+
+/***** Media *****/
+
+/***** Forms *****/
+
+/***** Tables *****/
+
+/***** Phrasing *****/
+
+/***** Misc. *****/
+
+/***** IDs, Classes, (@media) *****/
+/*** Title ***/
+#title {
+  text-align: left;
+
+  background-color: #ff4c68;
+}
+
+.container-fluid {
+  padding: 3% 15% 7.5%;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+/* You apparently need '!important' to change color here. */
+.nav-link {
+  font-family: "Montserrat-Light";
+  font-size: 1.5rem;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.title-image {
+  position: absolute;
+  right: 30%;
+
+  width: 60%;
+
+  transform: rotate(25deg);
+}
+
+@media (max-width: 1030px) {
+  #title {
+    text-align: center;
+
+    color: #fff;
+  }
+
+  .title-image {
+    position: static;
+
+    transform: rotate(0);
+  }
+}
+
+/*** Features ***/
+#features {
+  position: relative;
+
+  padding: 7.5% 15%;
+
+  background-color: #fff;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.feature-icon {
+  margin: auto auto 1rem;
+
+  color: #ef8172;
+}
+
+.feature-icon:hover {
+  color: #ff4c68;
+}
+
+/*** Testimonials ***/
+#testimonials {
+  color: #fff;
+  background-color: #ef8172;
+}
+
+.carousel-item {
+  padding: 7.5% 15%;
+}
+
+.testimonial-image {
+  width: 10%;
+  margin: 20px;
+
+  border-radius: 100%;
+}
+
+/*** Press ***/
+#press {
+  padding: 0 0 3%;
+
+  background-color: #ef8172;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/*** Pricing ***/
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3%;
+}
+
+/*** Call-to-Action ***/
+#call-to-action {
+  padding: 7.5% 15%;
+
+  color: #fff;
+  background-color: #ff4c68;
+}
+
+/*** Footer ***/
+#footer {
+  padding: 15% 15% 0;
+
+  background-color: #fff;
+}
+
+.footer-logo {
+  margin: 10px;
+}
+
+/*
+  Notes for future creations:
+  1)  IDs come before classes in HTML.
+
+      Example:
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+
+
+  2)  In classes, Bootstrap/other imported CSS classes first (etc.), then your 
+      external CSS classes.
+
+      Example:
+      <div class="col-md-6 col-lg-4 pricing-column">
+
+  3)  Structure in styles.css file:
+
+      Elements
+      IDs
+      Classes
+
+      Cause: <h1 id="id" class="class">...</h1>
+
+      You may change this in the future, so not something set in stone.
+      
+      Styles are applied more in this fashion, the top taking the most priority 
+      and the bottom taking the least:
+
+      IDs
+      Classes
+      Elements
+*/
